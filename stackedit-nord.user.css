@@ -6,6 +6,8 @@
 @author         OrangeBurrito
 @version        1.0.0
 @license        MIT 
+
+@preprocessor stylus
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://stackedit.io/app") {
