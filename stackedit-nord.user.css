@@ -1,0 +1,195 @@
+/* ==UserStyle==
+@name           StackEdit Nord
+@description    A polar theme for StackEdit
+@namespace      github.com/OrangeBurrito/stackedit-nord
+@homepageURL    https://github.com/OrangeBurrito/stackedit-nord
+@author         OrangeBurrito
+@version        1.0.0
+@license        MIT 
+==/UserStyle== */
+
+@-moz-document url-prefix("https://stackedit.io/app") {
+	:root {
+			--bg-color:#2e3440;
+			--bg-elevated-color: #3b4252;
+			--bg-warning-color: #d08770;
+			--header-color: #eceff4;
+			--text-color:#e5e9f0;
+			--text-alt-color: #d8dee9;
+			--text-dim-color:#4c566a;
+			--accent-color: #88c0d0;
+			--accent-dim-color: #81a1c1;
+			--accent-dark-color: #5e81ac;
+			--error-color: #bf616a;
+	}
+	
+	input,
+	textarea,
+	[contenteditable] {
+			caret-color: var(--text-color);
+	}
+	
+	/* Left Sidebar */
+	.side-title {
+			background: var(--bg-elevated-color);
+	}
+	
+	.side-title__button {
+			color: var(--text-alt-color);
+	}
+	
+	.layout__panel--explorer, .layout__panel--side-bar {
+			background: var(--bg-color);
+			border-right: 1px solid var(--text-dim-color);
+	}
+	
+	.explorer-node .explorer-node--folder, .explorer-node__item {
+			color: var(--text-color);
+	}
+	
+	.explorer-node--selected > .explorer-node__item {
+			background: var(--bg-elevated-color);
+	}
+	
+	.title__button:active, .side-title__button:focus, .side-title__button:hover { 
+			color: var(--header-color);
+	}
+	
+	.explorer-node__new-child .text-input {
+			background: var(--text-dim-color);
+			color: var(--header-color);
+	}
+	
+	/* Main Layout Panel */
+	
+	.layout__panel--navigation-bar {
+			background: var(--bg-elevated-color);
+	}
+	
+	.navigation-bar__button, .navigation-bar__title {
+			color: var(--text-alt-color);
+	}
+	
+	.navigation-bar__button[disabled], .navigation-bar__button[disabled]:active, .navigation-bar__button[disabled]:focus, .navigation-bar__button[disabled]:hover {
+			color: var(--accent-dim-color);
+	}
+	
+	/* Markdown Editor Pane */
+	
+	.layout__panel--editor {
+			background: var(--bg-color);
+	}
+	
+	.markdown-highlighting {
+			color: var(--text-color);
+	}
+	
+	.markdown-highlighting .img .cl-underlined-text, .markdown-highlighting .imgref .cl-underlined-text, .markdown-highlighting .link .cl-underlined-text, .markdown-highlighting .linkref .cl-underlined-text {
+			color: var(--header-color);
+	}
+	
+	.markdown-highlighting .h1, .markdown-highlighting .h2 {
+			color: var(--accent-color);
+	}
+	
+	.markdown-highlighting .img, .markdown-highlighting .imgref, .markdown-highlighting .link, .markdown-highlighting .linkref {
+			color: var(--text-dim-color);
+	}
+	
+	.markdown-highlighting .cl, .markdown-highlighting .hr {
+			color: var(--accent-dim-color);
+	}
+	
+	.markdown-highlighting .pre, .markdown-highlighting .code {
+			color: var(--accent-color);
+			background: var(--bg-elevated-color);
+	}
+	
+	.markdown-highlighting .blockquote {
+			color: var(--text-dim-color);
+	}
+	
+	.new-discussion-button {
+			color: var(--text-dim-color);
+	}
+	
+	/* Preview Pane */
+	
+	.preview, .preview__inner-1 {
+			color: var(--text-color);
+	}
+	
+	a {
+			color: var(--accent-color);
+	}
+	
+	.preview code, .preview pre {
+			background: var(--bg-color);
+	}
+	
+	.preview__button {
+			color: var(--text-alt-color);
+	}
+	
+	.preview__button:hover {
+			color: var(--header-color);
+	}
+	
+	.preview blockquote {
+			color: var(--text-color);
+			border-left: 5px solid var(--accent-dim-color);
+	}
+	
+	/* Right Layout Panel */
+	
+	.layout__panel--button-bar, .layout__panel--preview {
+			background: var(--bg-elevated-color);
+	}
+	
+	.button-bar__button {
+			color: var(--text-dim-color);
+	}
+	
+	.button-bar__button:hover {
+			color: var(--text-alt-color);
+	}
+	
+	.button-bar__button--on {
+			color: var(--text-color);
+	}
+	
+	/* Status Bar */
+	
+	.layout__panel--status-bar {
+			background: var(--accent-dark-color);
+	}
+	
+	.stat-panel {
+			color: var(--header-color);
+	}
+	
+	
+	/* Menu */
+	.layout__panel--side-bar .button, .layout__panel--side-bar .button:active, .layout__panel--side-bar .button:focus, .layout__panel--side-bar .button:hover, .hidden-file:focus + .button {
+			color: var(--text-color) !important;
+	}
+	
+	.button:active, .layout__panel--side-bar .button:focus, .layout__panel--side-bar .button:hover, .hidden-file:focus + .button {
+			background: var(--bg-elevated-color);
+	}
+	
+	.side-title__title {
+			color: var(--header-color);
+	}
+	
+	.menu-entry__label  {
+			background: var(--accent-dim-color);
+			color: var(--bg-color);
+			opacity: 1;
+	}
+	
+	.side-bar__info {
+			background: var(--bg-warning-color);
+			color: var(--bg-color);
+	}
+	}
